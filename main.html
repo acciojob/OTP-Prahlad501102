@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Entry</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="card">
+        <h1 id="verification_heading">Verify Your Account</h1>
+        <p id="verification_subtext">
+            We have sent a 6-digit verification code to your email. Please enter the code below to verify your account.
+        </p>
 
+        <div class="code-container">
+            <input type="number" class="code" maxlength="1" data-index="0" autofocus>
+            <input type="number" class="code" maxlength="1" data-index="1">
+            <input type="number" class="code" maxlength="1" data-index="2">
+            <input type="number" class="code" maxlength="1" data-index="3">
+            <input type="number" class="code" maxlength="1" data-index="4">
+            <input type="number" class="code" maxlength="1" data-index="5">
+        </div>
+        
+        <small class="info-text">
+            This is a simulated OTP interface. Focus handling is key!
+        </small>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>

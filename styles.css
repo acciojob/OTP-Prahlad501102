@@ -1,1 +1,66 @@
 /*  your css code here. If applicable */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#verification_heading {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#verification_subtext {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.code-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.code {
+    width: 45px;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    /* Hide spin buttons for number input */
+    -moz-appearance: textfield;
+}
+
+.code:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* For Webkit browsers */
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.info-text {
+    color: #999;
+    font-size: 0.8em;
+}
